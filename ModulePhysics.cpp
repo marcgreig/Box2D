@@ -1,6 +1,7 @@
 #include "Globals.h"
 #include "Application.h"
 #include "ModulePhysics.h"
+#include "ModuleInput.h"
 #include <cmath>
 
 // TODO 1: Include Box 2 header and library
@@ -38,12 +39,13 @@ bool ModulePhysics::Start()
 	// - You need init the world in the constructor
 	// - Remember to destroy the world after using it
 	
-	b2Vec2 gravity(0.0f, -10.0f);
+	b2Vec2 gravity(0.0f, 10.0f);
 	world = new b2World(gravity);
 
 	// TODO 4: Create a a big static circle as "ground"
 
 	b2BodyDef groundBodyDef;
+	groundBodyDef.type = b2_staticBody;
 	groundBodyDef.position.Set(50.0f, 45.0f);
 	b2Body* groundBody = world->CreateBody(&groundBodyDef);	b2CircleShape circle;	circle.m_radius = PIXEL_TO_METER(250);	groundBody->CreateFixture(&circle, 0.0f);
 
@@ -71,8 +73,21 @@ update_status ModulePhysics::PostUpdate()
 	// TODO 5: On space bar press, create a circle on mouse position
 	// - You need to transform the position / radius
 
-	if(App->input->GetKey(SDL_SCANCODE_F1) == KEY_DOWN)
-		debug = !debug;
+	if (App->input->GetKey(SDL_SCANCODE_SPACE) == KEY_DOWN) {
+
+		b2BodyDef pushCircle;
+		pushCircle.type = b2_dynamicBody;
+		pushCircle.position.Set(PIXEL_TO_METER(App->input->GetMouseX()), PIXEL_TO_METER(App->input->GetMouseY()));
+		pushCircle.angle = 0;
+		b2Body* dynamicBody = world->CreateBody(&pushCircle);
+
+		b2CircleShape circleShape;		circleShape.m_radius = PIXEL_TO_METER(30);
+
+		b2FixtureDef fixture;
+		fixture.shape = &circleShape;
+		dynamicBody->CreateFixture(&fixture);
+	}
+	debug = !debug;
 
 	if(!debug)
 		return UPDATE_CONTINUE;
