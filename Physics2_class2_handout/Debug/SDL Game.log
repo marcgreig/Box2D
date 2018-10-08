@@ -1,3 +1,26 @@
-﻿  ModulePhysics.cpp
-c:\users\marcgr8\downloads\physics2_class2_handout\modulephysics.cpp(35): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  SDL Game.vcxproj -> C:\Users\marcgr8\Downloads\Physics2_class2_handout\Debug\2D Physics - class 2.exe
+﻿  Application.cpp
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(41): error C2027: use of undefined type 'Application'
+  c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulewindow.h(7): note: see declaration of 'Application'
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(41): error C2227: left of '->input' must point to class/struct/union/generic type
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(41): error C2227: left of '->GetMouseX' must point to class/struct/union/generic type
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(41): error C2227: left of '->GetMouseY' must point to class/struct/union/generic type
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(41): error C2660: 'b2Vec2::Set': function does not take 1 arguments
+  c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\box2d\box2d\common\b2math.h(65): note: see declaration of 'b2Vec2::Set'
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(57): error C2027: use of undefined type 'Application'
+  c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulewindow.h(7): note: see declaration of 'Application'
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(57): error C2227: left of '->input' must point to class/struct/union/generic type
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(57): error C2227: left of '->GetMouseX' must point to class/struct/union/generic type
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(57): error C2227: left of '->GetMouseY' must point to class/struct/union/generic type
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(57): error C2660: 'b2Vec2::Set': function does not take 1 arguments
+  c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\box2d\box2d\common\b2math.h(65): note: see declaration of 'b2Vec2::Set'
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(120): error C2027: use of undefined type 'Application'
+  c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulewindow.h(7): note: see declaration of 'Application'
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(120): error C2227: left of '->input' must point to class/struct/union/generic type
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(120): error C2227: left of '->GetMouseX' must point to class/struct/union/generic type
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(120): error C2227: left of '->GetMouseY' must point to class/struct/union/generic type
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.h(120): error C2660: 'b2Vec2::Set': function does not take 1 arguments
+  c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\box2d\box2d\common\b2math.h(65): note: see declaration of 'b2Vec2::Set'
+  ModulePhysics.cpp
+c:\users\marcgr8\documents\github\box2d\physics2_class2_handout\modulephysics.cpp(34): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  ModuleSceneIntro.cpp
+  Generating Code...
