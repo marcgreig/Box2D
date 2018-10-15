@@ -1,0 +1,8 @@
+﻿  ModulePhysics.cpp
+c:\users\marcgr8\downloads\physics2_class3_handout\modulephysics.cpp(37): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\marcgr8\downloads\physics2_class3_handout\modulephysics.cpp(113): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\marcgr8\downloads\physics2_class3_handout\modulephysics.cpp(114): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\marcgr8\downloads\physics2_class3_handout\modulephysics.cpp(130): warning C4018: '<': signed/unsigned mismatch
+  ModuleSceneIntro.cpp
+  Generating Code...
+  SDL Game.vcxproj -> C:\Users\marcgr8\Downloads\Physics2_class3_handout\Debug\2D Physics - class 3.exe
