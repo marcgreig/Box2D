@@ -1,9 +1,2 @@
-﻿  ModulePhysics.cpp
-c:\users\marcgr8\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(40): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\marcgr8\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(121): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\marcgr8\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(122): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\marcgr8\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(165): warning C4018: '<': signed/unsigned mismatch
-c:\users\marcgr8\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(395): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\marcgr8\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(396): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\marcgr8\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(402): warning C4244: 'return': conversion from 'float32' to 'int', possible loss of data
-  SDL Game.vcxproj -> C:\Users\marcgr8\Documents\GitHub\Box2D\Physics2_class4_handout\Debug\2D Physics - class 4.exe
+﻿  ModuleSceneIntro.cpp
+  SDL Game.vcxproj -> C:\Users\arnaugg1\Documents\GitHub\Box2D\Physics2_class4_handout\Debug\2D Physics - class 4.exe

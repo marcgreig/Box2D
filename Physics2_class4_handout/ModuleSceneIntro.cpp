@@ -73,6 +73,7 @@ bool ModuleSceneIntro::Start()
 	};
 	App->physics->CreateChain(0, 0, background_points, 76);
 	App->physics->CreateCircle(397, 198, 15);
+	App->physics->CreateCircle(264, 285, 15);
 	return ret;
 }
 
