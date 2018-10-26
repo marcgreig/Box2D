@@ -1,7 +1,9 @@
 #pragma once
 #include "Module.h"
 #include "Globals.h"
+#include "p2List.h"
 #include "p2Point.h"
+
 
 class ModulePlayer : public Module
 {

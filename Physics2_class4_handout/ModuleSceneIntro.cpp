@@ -25,7 +25,7 @@ bool ModuleSceneIntro::Start()
 
 	background = App->textures->Load("pinball/background.png");
 	circle = App->textures->Load("pinball/wheel.png"); 
-	box = App->textures->Load("pinball/crate.png");
+	player = App->textures->Load("pinball/pinball_ball.png");
 	rick = App->textures->Load("pinball/rick_head.png");
 	bonus_fx = App->audio->LoadFx("pinball/bonus.wav");
 
@@ -217,7 +217,7 @@ update_status ModuleSceneIntro::Update()
 
 	if(App->input->GetKey(SDL_SCANCODE_2) == KEY_DOWN)
 	{
-		boxes.add(App->physics->CreateRectangle(App->input->GetMouseX(), App->input->GetMouseY(), 100, 50));
+		boxes.add(App->physics->CreatePlayer(App->input->GetMouseX(), App->input->GetMouseY(), 11));
 	}
 
 	if(App->input->GetKey(SDL_SCANCODE_3) == KEY_DOWN)
@@ -270,6 +270,8 @@ update_status ModuleSceneIntro::Update()
 	mouse.y = App->input->GetMouseY();
 
 	// All draw functions ------------------------------------------------------
+	App->renderer->Blit(player, x, y, NULL, 1.0f, c->data->GetRotation());
+
 	p2List_item<PhysBody*>* c = circles.getFirst();
 
 	while(c != NULL)
@@ -280,15 +282,6 @@ update_status ModuleSceneIntro::Update()
 		c = c->next;
 	}
 
-	c = boxes.getFirst();
-
-	while(c != NULL)
-	{
-		int x, y;
-		c->data->GetPosition(x, y);
-		App->renderer->Blit(box, x, y, NULL, 1.0f, c->data->GetRotation());
-		c = c->next;
-	}
 
 	c = ricks.getFirst();
 
