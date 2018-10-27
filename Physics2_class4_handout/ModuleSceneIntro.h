@@ -26,6 +26,7 @@ public:
 	SDL_Texture* box;
 	SDL_Texture* rick;
 	SDL_Texture* background;
+	SDL_Texture* ball;
 	SDL_Rect background_rect;
 	uint bonus_fx;
 	int* background_points;
