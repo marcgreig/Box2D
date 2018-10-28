@@ -1,0 +1,21 @@
+﻿  Application.cpp
+  log.cpp
+  Main.cpp
+  ModuleAudio.cpp
+  ModuleInput.cpp
+  ModulePhysics.cpp
+c:\users\arnau\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(145): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\arnau\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(146): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\arnau\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(189): warning C4018: '<': no coinciden signed/unsigned
+c:\users\arnau\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(419): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\arnau\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(420): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\arnau\documents\github\box2d\physics2_class4_handout\modulephysics.cpp(426): warning C4244: 'return': conversión de 'float32' a 'int'; posible pérdida de datos
+  ModulePlayer.cpp
+  ModuleRender.cpp
+  ModuleSceneIntro.cpp
+  ModuleTextures.cpp
+  ModuleWindow.cpp
+  Generando código
+  All 200 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Generación de código finalizada
+  SDL Game.vcxproj -> C:\Users\Arnau\Documents\GitHub\Box2D\Physics2_class4_handout\Release\2D Physics - class 4.exe
