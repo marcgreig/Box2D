@@ -8,7 +8,6 @@
 #include "ModulePlayer.h"
 #include "ModulePhysics.h"
 #include "ModuleSceneIntro.h"
-#include "ModuleCollider.h"
 
 #include "Application.h"
 
@@ -22,7 +21,6 @@ Application::Application()
 	player = new ModulePlayer(this);
 	scene_intro = new ModuleSceneIntro(this);
 	physics = new ModulePhysics(this);
-	collider = new ModuleCollider(this);
 
 	// The order of calls is very important!
 	// Modules will Init() Start() and Update in this order
@@ -35,7 +33,6 @@ Application::Application()
 	AddModule(textures);
 	AddModule(input);
 	AddModule(audio);
-	AddModule(collider);
 	
 	// Scenes
 	AddModule(scene_intro);

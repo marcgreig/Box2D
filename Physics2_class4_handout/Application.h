@@ -12,7 +12,6 @@ class ModuleAudio;
 class ModulePlayer;
 class ModuleSceneIntro;
 class ModulePhysics;
-class ModuleCollider;
 
 class Application
 {
@@ -25,7 +24,6 @@ public:
 	ModulePlayer* player;
 	ModuleSceneIntro* scene_intro;
 	ModulePhysics* physics;
-	ModuleCollider* collider;
 
 private:
 

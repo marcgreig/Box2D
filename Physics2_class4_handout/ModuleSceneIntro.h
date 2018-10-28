@@ -19,10 +19,11 @@ public:
 
 public:
 	p2List<PhysBody*> circles;
+	p2List<PhysBody*> boxes;
 	p2List<PhysBody*> ricks;
 
 	SDL_Texture* circle;
-	SDL_Texture* player;
+	SDL_Texture* box;
 	SDL_Texture* rick;
 	SDL_Texture* background;
 	SDL_Rect background_rect;
